@@ -19,6 +19,7 @@ const DEFAULT_PLAYERS = [
   "Polakovič",
   "Rosolov",
   "Rybár",
+  "Svitek",  
   "Škoda",
   "Tišťan",
   "Torma",
