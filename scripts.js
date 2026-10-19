@@ -653,9 +653,30 @@ async function makePosterBlob() {
 
 
   context.font = "800 38px Arial";
-  context.fillText(homeScore, width * 0.40, 158);
-  context.fillText(":", center, 158);
-  context.fillText(awayScore, width * 0.60, 158);
+  
+  const scoreY = 158;
+  const scoreGap = 14;
+  const colonHalfWidth = context.measureText(":").width / 2;
+  
+  context.textAlign = "right";
+  context.fillText(
+    homeScore,
+    center - colonHalfWidth - scoreGap,
+    scoreY
+  );
+  
+  context.textAlign = "center";
+  context.fillText(":", center, scoreY);
+  
+  context.textAlign = "left";
+  context.fillText(
+    awayScore,
+    center + colonHalfWidth + scoreGap,
+    scoreY
+  );
+  
+  context.textAlign = "center";
+
 
   // Scorer summary.
   let y = redHeight;
