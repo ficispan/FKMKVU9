@@ -731,7 +731,7 @@ async function makePosterBlob() {
     context.fillText(
       player,
       cellCenter,
-      imageY + jerseyHeight + 17,
+      imageY + jerseyHeight + 13,
       cellWidth - 8
     );
   });
